@@ -1,0 +1,20 @@
+/*importaciones*/
+.main__titulo {
+  font-size: 30px;
+  color: grey;
+  background-color: red;
+}
+
+.main__parrafo {
+  font-size: 15px;
+  color: red;
+}
+
+header nav .encabezado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  font-size: 25px;
+}/*# sourceMappingURL=origen.css.map */
