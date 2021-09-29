@@ -5,6 +5,7 @@
 #4F9150 verde
 #795432 marrón
 #989c9e gris
+#FFB9BD rosa
 Font Family Kubik
 
 **********************/
@@ -17,36 +18,48 @@ h2 {
   color: #795432; }
 
 body {
-  margin-left: 20px;
-  font-family: 'Rubik', sans-serif;
-  background: linear-gradient(0deg, #fff, 50%, #E2CEC9); }
+  margin-left: 10px;
+  font-family: 'Rubik', sans-serif; }
 
 /* INDEX ***************************/
 .card-title {
-  color: #EFAA9C;
+  color: #795432;
   font-size: 25px; }
 
 .btn-primary {
-  color: #fff;
-  background-color: #4F9150;
-  border-color: #4F9150; }
+  color: #989c9e;
+  background-color: #FFB9BD;
+  border-color: #FFB9BD; }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #EFAA9C;
-  border-color: #EFAA9C; }
+  background-color: #989c9e;
+  border-color: #989c9e; }
+
+.card-text-index {
+  color: grey; }
 
 /* CLIENTES ***************************/
 .grid div {
   border: 10px;
   margin: 5px;
-  padding: 5px; }
+  padding: 10px; }
 
 .grid {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 400px 400px;
-  margin: 10px; }
+  margin: 5px;
+  margin-right: 10px; }
+
+.testimonio {
+  font-size: 20px;
+  color: grey; }
+
+.bajadaCarouselTestimonio {
+  color: #4F9150;
+  font-size: 20px;
+  font-style: bold; }
 
 /* SERVICIOS ***************************/
 .serviciosLista {
@@ -73,16 +86,27 @@ body {
 /* NOSOTROS ***************************/
 .sobreLista {
   display: grid;
-  grid-template-columns: 500px 600px;
-  grid-template-rows: 500px 600px;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 400px 400px;
   margin-bottom: 10px; }
 
 .sobreLista p {
-  font-size: 30px;
+  font-size: 16px;
   justify-content: center;
   align-content: center;
-  color: #4F9150;
+  color: grey;
   margin-left: 20px; }
+
+.card bg-dark text-white {
+  border: none; }
+
+.card-text {
+  color: white;
+  display: grid;
+  grid-template-columns: 600px 400px; }
+
+.card-text p {
+  justify-content: flex start; }
 
 /* CONTACTO ***************************/
 .form-group {
@@ -95,9 +119,9 @@ body {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
   padding-left: 1.5rem;
-  border: 1px solid #cbcbd1;
+  border: 1px solid #FFB9BD;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #FFB9BD;
   font-size: 0.875rem;
   line-height: 1.5rem;
   -webkit-appearance: none;
@@ -110,22 +134,22 @@ body {
 
 .form-control-input:focus,
 .form-control-textarea:focus {
-  border: 1px solid #EFAA9C;
+  border: 1px solid #FFB9BD;
   outline: none;
   /* Removes blue border on focus */ }
 
 .form-control-input:hover,
 .form-control-textarea:hover {
-  border: 1px solid #EFAA9C; }
+  border: 1px solid #FFB9BD; }
 
 .form-control-submit-button {
   display: inline-block;
   width: 100%;
   height: 3.25rem;
-  border: 1px solid #4F9150;
+  border: 1px solid #FFB9BD;
   border-radius: 4px;
-  background-color: #4F9150;
-  color: #ffffff;
+  background-color: #FFB9BD;
+  color: #989c9e;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 0;
@@ -133,31 +157,23 @@ body {
   transition: all 0.2s; }
 
 .form-control-submit-button:hover {
-  border: 1px solid #4F9150;
-  background-color: transparent;
-  color: #4F9150; }
+  border: 1px solid #989c9e;
+  background-color: #989c9e;
+  color: white; }
 
 .villaUrquiza {
   height: 400px;
-  width: 600px; }
+  width: 100%; }
 
-.btn--servicios {
-  background-color: #4F9150; }
+.sectionVillaUrquiza {
+  height: 480px; }
 
-.btn--clientes {
-  background-color: #EFAA9C; }
-
-.btn--contacto {
-  background-color: #795432; }
-
-.each li {
-  display: flex;
-  flex-direction: column;
-  color: white; }
+.imagenContacto {
+  width: 100%; }
 
 /*     Footer     */
 footer {
-  background: #EFAA9C;
+  background: #FFB9BD;
   font-family: 'Rubik', sans-serif;
   height: 100 !important; }
 
@@ -192,3 +208,6 @@ h3 {
 
 .navbar-light .navbar-nav .nav-link {
   color: #4F9150; }
+
+.container-fluid {
+  color: #D8D1D1; }

@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
  footer {
-     background: #EFAA9C;
+     background: #FFB9BD;
      font-family: 'Rubik', sans-serif;
-         height: 100 !important
- }
+     height: 100 !important
+         }
 
  .container-fluid {
      overflow: hidden;
@@ -38,3 +38,5 @@
  .rights {
      font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
  }
+
+ 
