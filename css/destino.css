@@ -12,18 +12,20 @@ Font Family Kubik
 /*importaciones*/
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 h1 {
-  color: #795432; }
+  color: #989c9e;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px; }
 
 h2 {
-  color: #795432; }
+  color: grey; }
 
 body {
-  margin-left: 10px;
+  margin: 10px;
   font-family: 'Rubik', sans-serif; }
 
 /* INDEX ***************************/
 .card-title {
-  color: #795432;
+  color: #989c9e;
   font-size: 25px; }
 
 .btn-primary {
@@ -36,24 +38,43 @@ body {
   background-color: #989c9e;
   border-color: #989c9e; }
 
+.card {
+  border: none; }
+
 .card-text-index {
   color: grey; }
 
 /* CLIENTES ***************************/
-.grid div {
-  border: 10px;
-  margin: 5px;
-  padding: 10px; }
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
 
-.grid {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 400px 400px;
-  margin: 5px;
-  margin-right: 10px; }
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1%; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
 
 .testimonio {
-  font-size: 20px;
+  font-size: 25px;
   color: grey; }
 
 .bajadaCarouselTestimonio {
@@ -62,28 +83,60 @@ body {
   font-style: bold; }
 
 /* SERVICIOS ***************************/
-.serviciosLista {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 400px 70px 200px;
-  margin: 5px;
-  padding: 10px; }
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
 
-.serviciosLista h2 {
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  color: #795432;
-  font-weight: bold; }
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
 
-.serviciosLista p {
-  font-size: 16px;
-  justify-content: center;
-  align-items: center;
-  color: #795432;
-  padding-right: 20px; }
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID DE 2 */
+.span_2_of_2 {
+  width: 100%; }
+
+.span_1_of_2 {
+  width: 49.2%; }
+
+.animate__animated {
+  border-radius: 10px; }
+
+/*  ANCHO COMPLETO EN 480 PX*/
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; } }
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2, .span_1_of_2 {
+    width: 100%; } }
 
 /* NOSOTROS ***************************/
+.somos {
+  font-size: 28px;
+  color: grey;
+  font-family: 'Dancing Script', cursive;
+  text-align: center; }
+
 .sobreLista {
   display: grid;
   grid-template-columns: 600px 600px;
@@ -96,17 +149,6 @@ body {
   align-content: center;
   color: grey;
   margin-left: 20px; }
-
-.card bg-dark text-white {
-  border: none; }
-
-.card-text {
-  color: white;
-  display: grid;
-  grid-template-columns: 600px 400px; }
-
-.card-text p {
-  justify-content: flex start; }
 
 /* CONTACTO ***************************/
 .form-group {
@@ -199,15 +241,59 @@ h3 {
   font-size: 21px !important; }
 
 .rights {
-  font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; }
+  font-size: calc(14px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; }
+
+.instagram {
+  color: grey;
+  padding: 10px; }
+
+.facebook {
+  color: grey; }
+
+.linkedin {
+  color: grey; }
 
 .nav-item {
-  padding: 50px;
   font-weight: bold;
-  font-size: 16px; }
+  font-size: 14px; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #4F9150; }
+  color: #989c9e; }
 
-.container-fluid {
-  color: #D8D1D1; }
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #989c9e;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0; }
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff; }
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff; }
+
+#topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+  transition: 0.3s; }
+
+#topbar .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px; }
+
+#topbar .social-links a:hover {
+  color: white; }
